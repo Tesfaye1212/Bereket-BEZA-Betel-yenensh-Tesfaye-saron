@@ -1,12 +1,19 @@
 from clean_text import clean_text
 
+
 def word_frequency(file_path):
-    print("Enter 0 for all word frequency ranks or the top number you want to see:")
-    try:
-        top = int(input("Top of: "))
-    except ValueError:
-        print("Invalid choice. Showing all word frequency ranks.")
+    print("Enter 'A' or 'a' for all word frequency ranks or the top number you want to see:")
+    user_input = input("Top of: ")
+
+    if user_input.lower() == 'a':
         top = 0
+    else:
+        try:
+            top = int(user_input)
+        except ValueError:
+            print("Invalid choice. Showing all word frequency ranks.")
+            top = 0
+
     dictionary = {}
 
     words = clean_text(file_path)

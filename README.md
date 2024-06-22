@@ -27,7 +27,7 @@ This function computes and returns a dictionary of character frequencies from th
 
 compute_statistics(text)
 This function computes and returns statistical information about the text, including the total number of lines, total number of words, and total number of characters.
-<b>Run Main.py file<b>
+<b style="color:red">Run Main.py file<b>
 
 Output
 The program outputs the following:
